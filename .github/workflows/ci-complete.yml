@@ -50,5 +50,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/promo-sdi:latest
-            \({{ secrets.DOCKERHUB_USERNAME }}/promo-sdi:\){{ github.sha }}
+            chrizman007/promo-sdi:latest
+            chrizman007/promo-sdi:${{ github.sha }}
